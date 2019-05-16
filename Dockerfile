@@ -1,11 +1,12 @@
-FROM alpine:3.8 as builder
+FROM node:12.2.0-alpine as builder
 
-RUN apk add --update bash p7zip openssl yarn && rm -rf /var/cache/apk/*
+RUN apk add --update su-exec p7zip openssl nano yarn && rm -rf /var/cache/apk/*
 
-RUN mkdir /app
+RUN mkdir /app /data
 WORKDIR /app
 
 COPY package.json package.json
+COPY package-lock.json package-lock.json
 
 COPY lib lib
 COPY prompters prompters
@@ -17,28 +18,8 @@ COPY features.json features.json
 COPY help.json help.json
 COPY index.js index.js
 
-
-RUN yarn
-
-#RUN rm -rf /app/node_modules
-
-#FROM alpine:3.8
-
-##apache2-utils
-#RUN apk add --update su-exec p7zip openssl nano yarn && rm -rf /var/cache/apk/*
-
-RUN mkdir -p /data
-
-#COPY --from=builder /app /app
-
-#WORKDIR /app
-
-#RUN yarn --production
-
-
+RUN npm ci --production
 ENV EDITOR=/usr/bin/nano
-
-
 
 #WORKDIR /data
 
