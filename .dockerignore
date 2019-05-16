@@ -4,4 +4,3 @@ script
 generator-cyphernode/node_modules
 generator-cyphernode/package-lock
 generator-cyphernode/__tests__
-package-lock.json
