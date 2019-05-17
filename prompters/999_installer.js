@@ -37,20 +37,20 @@ module.exports = {
       default: utils.getDefault( 'traefik_datapath' ),
       choices: [
         {
-          name: utils.setupDir+"/cyphernode/traefik",
-          value: utils.setupDir+"/cyphernode/traefik"
+          name: utils.setupDir()+"/cyphernode/traefik",
+          value: utils.setupDir()+"/cyphernode/traefik"
         },
         {
-          name: utils.defaultDataDirBase+"/cyphernode/traefik",
-          value: utils.defaultDataDirBase+"/cyphernode/traefik"
+          name: utils.defaultDataDirBase()+"/cyphernode/traefik",
+          value: utils.defaultDataDirBase()+"/cyphernode/traefik"
         },
         {
-          name: utils.defaultDataDirBase+"/.cyphernode/traefik",
-          value: utils.defaultDataDirBase+"/.cyphernode/traefik"
+          name: utils.defaultDataDirBase()+"/.cyphernode/traefik",
+          value: utils.defaultDataDirBase()+"/.cyphernode/traefik"
         },
         {
-          name: utils.defaultDataDirBase+"/traefik",
-          value: utils.defaultDataDirBase+"/traefik"
+          name: utils.defaultDataDirBase()+"/traefik",
+          value: utils.defaultDataDirBase()+"/traefik"
         },
         {
           name: "Custom path",
@@ -75,20 +75,20 @@ module.exports = {
       default: utils.getDefault( 'gatekeeper_datapath' ),
       choices: [
         {
-          name: utils.setupDir+"/cyphernode/gatekeeper",
-          value: utils.setupDir+"/cyphernode/gatekeeper"
+          name: utils.setupDir()+"/cyphernode/gatekeeper",
+          value: utils.setupDir()+"/cyphernode/gatekeeper"
         },
         {
-          name: utils.defaultDataDirBase+"/cyphernode/gatekeeper",
-          value: utils.defaultDataDirBase+"/cyphernode/gatekeeper"
+          name: utils.defaultDataDirBase()+"/cyphernode/gatekeeper",
+          value: utils.defaultDataDirBase()+"/cyphernode/gatekeeper"
         },
         {
-          name: utils.defaultDataDirBase+"/.cyphernode/gatekeeper",
-          value: utils.defaultDataDirBase+"/.cyphernode/gatekeeper"
+          name: utils.defaultDataDirBase()+"/.cyphernode/gatekeeper",
+          value: utils.defaultDataDirBase()+"/.cyphernode/gatekeeper"
         },
         {
-          name: utils.defaultDataDirBase+"/gatekeeper",
-          value: utils.defaultDataDirBase+"/gatekeeper"
+          name: utils.defaultDataDirBase()+"/gatekeeper",
+          value: utils.defaultDataDirBase()+"/gatekeeper"
         },
         {
           name: "Custom path",
@@ -113,20 +113,20 @@ module.exports = {
       default: utils.getDefault( 'proxy_datapath' ),
       choices: [
         {
-          name: utils.setupDir+"/cyphernode/proxy",
-          value: utils.setupDir+"/cyphernode/proxy"
+          name: utils.setupDir()+"/cyphernode/proxy",
+          value: utils.setupDir()+"/cyphernode/proxy"
         },
         {
-          name: utils.defaultDataDirBase+"/cyphernode/proxy",
-          value: utils.defaultDataDirBase+"/cyphernode/proxy"
+          name: utils.defaultDataDirBase()+"/cyphernode/proxy",
+          value: utils.defaultDataDirBase()+"/cyphernode/proxy"
         },
         {
-          name: utils.defaultDataDirBase+"/.cyphernode/proxy",
-          value: utils.defaultDataDirBase+"/.cyphernode/proxy"
+          name: utils.defaultDataDirBase()+"/.cyphernode/proxy",
+          value: utils.defaultDataDirBase()+"/.cyphernode/proxy"
         },
         {
-          name: utils.defaultDataDirBase+"/proxy",
-          value: utils.defaultDataDirBase+"/proxy"
+          name: utils.defaultDataDirBase()+"/proxy",
+          value: utils.defaultDataDirBase()+"/proxy"
         },
         {
           name: "Custom path",
@@ -151,20 +151,20 @@ module.exports = {
       default: utils.getDefault( 'bitcoin_datapath' ),
       choices: [
         {
-          name: utils.setupDir+"/cyphernode/bitcoin",
-          value: utils.setupDir+"/cyphernode/bitcoin"
+          name: utils.setupDir()+"/cyphernode/bitcoin",
+          value: utils.setupDir()+"/cyphernode/bitcoin"
         },
         {
-          name: utils.defaultDataDirBase+"/cyphernode/bitcoin",
-          value: utils.defaultDataDirBase+"/cyphernode/bitcoin"
+          name: utils.defaultDataDirBase()+"/cyphernode/bitcoin",
+          value: utils.defaultDataDirBase()+"/cyphernode/bitcoin"
         },
         {
-          name: utils.defaultDataDirBase+"/.cyphernode/bitcoin",
-          value: utils.defaultDataDirBase+"/.cyphernode/bitcoin"
+          name: utils.defaultDataDirBase()+"/.cyphernode/bitcoin",
+          value: utils.defaultDataDirBase()+"/.cyphernode/bitcoin"
         },
         {
-          name: utils.defaultDataDirBase+"/bitcoin",
-          value: utils.defaultDataDirBase+"/bitcoin"
+          name: utils.defaultDataDirBase()+"/bitcoin",
+          value: utils.defaultDataDirBase()+"/bitcoin"
         },
         {
           name: "Custom path",
@@ -189,20 +189,20 @@ module.exports = {
       default: utils.getDefault( 'lightning_datapath' ),
       choices: [
         {
-          name: utils.setupDir+"/cyphernode/lightning",
-          value: utils.setupDir+"/cyphernode/lightning"
+          name: utils.setupDir()+"/cyphernode/lightning",
+          value: utils.setupDir()+"/cyphernode/lightning"
         },
         {
-          name: utils.defaultDataDirBase+"/cyphernode/lightning",
-          value: utils.defaultDataDirBase+"/cyphernode/lightning"
+          name: utils.defaultDataDirBase()+"/cyphernode/lightning",
+          value: utils.defaultDataDirBase()+"/cyphernode/lightning"
         },
         {
-          name: utils.defaultDataDirBase+"/.cyphernode/lightning",
-          value: utils.defaultDataDirBase+"/.cyphernode/lightning"
+          name: utils.defaultDataDirBase()+"/.cyphernode/lightning",
+          value: utils.defaultDataDirBase()+"/.cyphernode/lightning"
         },
         {
-          name: utils.defaultDataDirBase+"/lightning",
-          value: utils.defaultDataDirBase+"/lightning"
+          name: utils.defaultDataDirBase()+"/lightning",
+          value: utils.defaultDataDirBase()+"/lightning"
         },
         {
           name: "Custom path",
@@ -227,20 +227,20 @@ module.exports = {
       default: utils.getDefault( 'otsclient_datapath' ),
       choices: [
         {
-          name: utils.setupDir+"/cyphernode/otsclient",
-          value: utils.setupDir+"/cyphernode/otsclient"
+          name: utils.setupDir()+"/cyphernode/otsclient",
+          value: utils.setupDir()+"/cyphernode/otsclient"
         },
         {
-          name: utils.defaultDataDirBase+"/cyphernode/otsclient",
-          value: utils.defaultDataDirBase+"/cyphernode/otsclient"
+          name: utils.defaultDataDirBase()+"/cyphernode/otsclient",
+          value: utils.defaultDataDirBase()+"/cyphernode/otsclient"
         },
         {
-          name: utils.defaultDataDirBase+"/.cyphernode/otsclient",
-          value: utils.defaultDataDirBase+"/.cyphernode/otsclient"
+          name: utils.defaultDataDirBase()+"/.cyphernode/otsclient",
+          value: utils.defaultDataDirBase()+"/.cyphernode/otsclient"
         },
         {
-          name: utils.defaultDataDirBase+"/otsclient",
-          value: utils.defaultDataDirBase+"/otsclient"
+          name: utils.defaultDataDirBase()+"/otsclient",
+          value: utils.defaultDataDirBase()+"/otsclient"
         },
         {
           name: "Custom path",

@@ -26,6 +26,7 @@
     "gatekeeper_cns",
     "gatekeeper_clientkeyspassword",
     "gatekeeper_datapath",
+    "gatekeeper_port",
     "lightning_expose",
     "lightning_implementation",
     "lightning_datapath",
@@ -297,6 +298,7 @@
         "internal"
       ],
       "title": "Bitcoin mode",
+      "default": "internal",
       "examples": [
         "internal"
       ]
@@ -325,6 +327,15 @@
       "title": "Gatekeeper datapath",
       "examples": [
         "/tmp/cyphernode/gatekeeper"
+      ]
+    },
+    "gatekeeper_port": {
+      "$id": "#/properties/gatekeeper_port",
+      "type": "integer",
+      "title": "Gatekeeper port",
+      "default": 2009,
+      "examples": [
+        2009
       ]
     },
     "gatekeeper_keys": {
@@ -425,7 +436,6 @@
       "$id": "#/properties/lightning_nodename",
       "type": "string",
       "title": "The lightning node name",
-      "default": "",
       "examples": [
         "🚀 Mighty Moose 🚀"
       ]
@@ -435,7 +445,6 @@
       "type": "string",
       "pattern": "^[0-9A-Fa-f]{6}$",
       "title": "The lightning node color",
-      "default": "ff0000",
       "examples": [
         "ff0000",
         "00ff00",

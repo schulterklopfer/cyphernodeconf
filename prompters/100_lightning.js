@@ -85,6 +85,6 @@ module.exports = {
     }];
   },
   templates: function( props ) {
-    return templates[props.lightning_implementation]
+    return featureCondition(props)?templates[props.lightning_implementation]:[];
   }
 };
