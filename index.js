@@ -1,9 +1,12 @@
 const App = require( './lib/app.js' );
 
-const main = async () => {
+const main = async ( args ) => {
   const app = new App();
-  await app.start(  { noWizard: false, noSplashScreen: false } );
+  const noWizard = args.indexOf('recreate') !== -1;
+  await app.start(  {
+    noWizard: noWizard,
+    noSplashScreen: noWizard
+  } );
 };
 
-main();
-
+main( process.argv.slice( 2, process.argv.length ) );
