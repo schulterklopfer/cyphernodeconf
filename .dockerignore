@@ -1,6 +1,7 @@
-SatoshiPortal
-data
-script
-generator-cyphernode/node_modules
-generator-cyphernode/package-lock
-generator-cyphernode/__tests__
+node_modules
+Dockerfile
+.eslintignore
+.eslintrc.json
+.gitignore
+jest.config.js
+LICENSE
