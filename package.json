@@ -31,12 +31,5 @@
     "jest": "^24.8.0"
   },
   "repository": "git@github.com:schulterklopfer/cyphernodeconf.git",
-  "license": "MIT",
-  "bin": "index.js",
-  "pkg": {
-    "assets": [ "prompters/*.js", "schema/*.json","splash/*.png.txt","templates/**/*" ],
-    "targets": [
-      "node8"
-    ]
-  }
+  "license": "MIT"
 }
