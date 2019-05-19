@@ -62,10 +62,10 @@ test( 'migrate 0.1.0 -> 0.2.0', async () => {
     const oldConfigEntry = gatekeeper_keys.configEntries[i];
 
     const key = new ApiKey();
-    key.setFomConfigEntry( configEntry )
+    key.setFromConfigEntry( configEntry )
 
     const oldKey = new ApiKey();
-    oldKey.setFomConfigEntry( oldConfigEntry );
+    oldKey.setFromConfigEntry( oldConfigEntry );
 
     expect( key.id ).toEqual( oldKey.id );
     expect( key.key ).toEqual( oldKey.key );
