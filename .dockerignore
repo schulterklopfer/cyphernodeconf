@@ -1,7 +1,11 @@
 node_modules
 Dockerfile
+.dockerignore
 .eslintignore
 .eslintrc.json
 .gitignore
 jest.config.js
 LICENSE
+build.sh
+run.sh
+jest.config.js
