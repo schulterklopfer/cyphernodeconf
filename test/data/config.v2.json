@@ -21,11 +21,13 @@
   "lightning_expose": true,
   "gatekeeper_keys": {
     "configEntries": [
+      "kapi_id=\"000\";kapi_key=\"a27f9e73fdde6a5005879c273c9aea5e8d917eec77bbdfd73272c0af9b4c6b7a\";kapi_groups=\"watcher\";eval ugroups_${kapi_id}=${kapi_groups};eval ukey_${kapi_id}=${kapi_key}",
       "kapi_id=\"001\";kapi_key=\"a27f9e73fdde6a5005879c273c9aea5e8d917eec77bbdfd73272c0af9b4c6b7a\";kapi_groups=\"watcher\";eval ugroups_${kapi_id}=${kapi_groups};eval ukey_${kapi_id}=${kapi_key}",
       "kapi_id=\"002\";kapi_key=\"fe58ddbb66d7302a7087af3242a98b6326c51a257f5eab1c06bb8cc02e25890d\";kapi_groups=\"watcher,spender\";eval ugroups_${kapi_id}=${kapi_groups};eval ukey_${kapi_id}=${kapi_key}",
       "kapi_id=\"003\";kapi_key=\"f0b8bb52f4c7007938757bcdfc73b452d6ce08cc0c660ce57c5464ae95f35417\";kapi_groups=\"watcher,spender,admin\";eval ugroups_${kapi_id}=${kapi_groups};eval ukey_${kapi_id}=${kapi_key}"
     ],
     "clientInformation": [
+      "000=a27f9e73fdde6a5005879c273c9aea5e8d917eec77bbdfd73272c0af9b4c6b7a",
       "001=a27f9e73fdde6a5005879c273c9aea5e8d917eec77bbdfd73272c0af9b4c6b7a",
       "002=fe58ddbb66d7302a7087af3242a98b6326c51a257f5eab1c06bb8cc02e25890d",
       "003=f0b8bb52f4c7007938757bcdfc73b452d6ce08cc0c660ce57c5464ae95f35417"
@@ -46,6 +48,5 @@
   "derivation_path": "da",
   "gatekeeper_clientkeyspassword": "test123",
   "gatekeeper_datapath": "/Users/jash/.cyphernode/gatekeeper",
-  "traefik_datapath": "foo",
-  "foo": "bar"
+  "traefik_datapath": "foo"
 }

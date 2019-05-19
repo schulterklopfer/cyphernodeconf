@@ -48,6 +48,5 @@
   "derivation_path": "da",
   "gatekeeper_clientkeyspassword": "test123",
   "gatekeeper_datapath": "/Users/jash/.cyphernode/gatekeeper",
-  "traefik_datapath": "foo",
-  "foo": "bar"
+  "traefik_datapath": "foo"
 }
