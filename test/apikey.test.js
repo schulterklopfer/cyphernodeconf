@@ -31,3 +31,12 @@ test( 'Create ApiKey instance, randomise it and use getters', async ()=>{
   expect( apiKey.getConfigEntry() ).toEqual( `kapi_id="testId";kapi_key="${keyString}";kapi_groups="group1,group2";${script}` );
 });
 
+test( 'Set properties of ApiKey instance from config entry', async () => {
+  const configEntry = 'kapi_id="000";kapi_key="b1fdc782037609f8ecc063ac192e92d57544263a950c637ed6b7d79cc9eb9f95";kapi_groups="stats";eval ugroups_${kapi_id}=${kapi_groups};eval ukey_${kapi_id}=${kapi_key}';
+  const apiKey = new ApiKey();
+  apiKey.setFomConfigEntry(configEntry);
+  expect( apiKey.id ).toEqual('000');
+  expect( apiKey.groups ).toEqual(['stats']);
+  expect( apiKey.key ).toEqual('b1fdc782037609f8ecc063ac192e92d57544263a950c637ed6b7d79cc9eb9f95');
+  expect( apiKey.script ).toEqual('eval ugroups_${kapi_id}=${kapi_groups};eval ukey_${kapi_id}=${kapi_key}')
+})
