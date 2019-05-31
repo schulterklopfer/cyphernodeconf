@@ -250,10 +250,26 @@
         "/tmp/cyphernode/bitcoin"
       ]
     },
+    "bitcoin_datapath_custom": {
+      "$id": "#/properties/bitcoin_datapath_custom",
+      "type": "string",
+      "title": "Bitcoin custom datapath",
+      "examples": [
+        "/tmp/cyphernode/bitcoin"
+      ]
+    },
     "lightning_datapath": {
       "$id": "#/properties/lightning_datapath",
       "type": "string",
       "title": "Lightning datapath",
+      "examples": [
+        "/tmp/cyphernode/lightning"
+      ]
+    },
+    "lightning_datapath_custom": {
+      "$id": "#/properties/lightning_datapath_custom",
+      "type": "string",
+      "title": "Lightning custom datapath",
       "examples": [
         "/tmp/cyphernode/lightning"
       ]
@@ -266,6 +282,14 @@
         "/tmp/cyphernode/proxy"
       ]
     },
+    "proxy_datapath_custom": {
+      "$id": "#/properties/proxy_datapath_custom",
+      "type": "string",
+      "title": "Proxy custom datapath",
+      "examples": [
+        "/tmp/cyphernode/proxy"
+      ]
+    },
     "otsclient_datapath": {
       "$id": "#/properties/otsclient_datapath",
       "type": "string",
@@ -274,10 +298,26 @@
         "/tmp/cyphernode/otsclient"
       ]
     },
+    "otsclient_datapath_custom": {
+      "$id": "#/properties/otsclient_datapath_custom",
+      "type": "string",
+      "title": "OTS Client custom datapath",
+      "examples": [
+        "/tmp/cyphernode/otsclient"
+      ]
+    },
     "traefik_datapath": {
       "$id": "#/properties/traefik_datapath",
       "type": "string",
       "title": "Traefik datapath",
+      "examples": [
+        "/tmp/cyphernode/traefik"
+      ]
+    },
+    "traefik_datapath_custom": {
+      "$id": "#/properties/traefik_datapath_custom",
+      "type": "string",
+      "title": "Traefik custom datapath",
       "examples": [
         "/tmp/cyphernode/traefik"
       ]
@@ -325,6 +365,14 @@
       "$id": "#/properties/gatekeeper_datapath",
       "type": "string",
       "title": "Gatekeeper datapath",
+      "examples": [
+        "/tmp/cyphernode/gatekeeper"
+      ]
+    },
+    "gatekeeper_datapath_custom": {
+      "$id": "#/properties/gatekeeper_datapath_custom",
+      "type": "string",
+      "title": "Gatekeeper custom datapath",
       "examples": [
         "/tmp/cyphernode/gatekeeper"
       ]
