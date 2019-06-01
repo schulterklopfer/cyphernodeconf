@@ -438,20 +438,17 @@
     "gatekeeper_sslcert": {
       "$id": "#/properties/gatekeeper_sslcert",
       "type": "string",
-      "title": "Gatekeeper SSL Cert",
-      "default": ""
+      "title": "Gatekeeper SSL Cert"
     },
     "gatekeeper_sslkey": {
       "$id": "#/properties/gatekeeper_sslkey",
       "type": "string",
-      "title": "Gatekeeper SSL Key",
-      "default": ""
+      "title": "Gatekeeper SSL Key"
     },
     "gatekeeper_cns": {
       "$id": "#/properties/gatekeeper_cns",
       "type": "string",
       "title": "Gatekeeper cns",
-      "default": "",
       "examples": [
         "myhost.mydomain.com,*.myotherdomain.com,123.123.123.123"
       ]
@@ -459,14 +456,12 @@
     "gatekeeper_clientkeyspassword": {
       "$id": "#/properties/gatekeeper_clientkeyspassword",
       "type": "string",
-      "title": "Password for the encrypted client keys archive",
-      "default": ""
+      "title": "Password for the encrypted client keys archive"
     },
     "adminhash": {
       "$id": "#/properties/adminhash",
       "type": "string",
-      "title": "Bcrypted hash of admin password",
-      "default": ""
+      "title": "Bcrypted hash of admin password"
     },
     "lightning_implementation": {
       "$id": "#/properties/lightning_implementation",

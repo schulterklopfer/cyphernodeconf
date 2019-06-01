@@ -93,7 +93,6 @@
           "otsclient"
         ],
         "title": "The feature",
-        "default": "",
         "examples": [
           "lightning",
           "otsclient"
@@ -391,38 +390,32 @@
     "gatekeeper_clientkeyspassword": {
       "$id": "#/properties/gatekeeper_clientkeyspassword",
       "type": "string",
-      "title": "Password for the encrypted client keys archive",
-      "default": ""
+      "title": "Password for the encrypted client keys archive"
     },
     "gatekeeper_clientkeyspassword_c": {
       "$id": "#/properties/gatekeeper_clientkeyspassword",
       "type": "string",
-      "title": "Password for the encrypted client keys archive, verified",
-      "default": ""
+      "title": "Password for the encrypted client keys archive, verified"
     },
     "gatekeeper_statuspw": {
       "$id": "#/properties/adminhash",
       "type": "string",
-      "title": "MD5 hash of admin password",
-      "default": ""
+      "title": "MD5 hash of admin password"
     },
     "gatekeeper_sslcert": {
       "$id": "#/properties/gatekeeper_sslcert",
       "type": "string",
-      "title": "Gatekeeper SSL Cert",
-      "default": ""
+      "title": "Gatekeeper SSL Cert"
     },
     "gatekeeper_sslkey": {
       "$id": "#/properties/gatekeeper_sslkey",
       "type": "string",
-      "title": "Gatekeeper SSL Key",
-      "default": ""
+      "title": "Gatekeeper SSL Key"
     },
     "gatekeeper_cns": {
       "$id": "#/properties/gatekeeper_cns",
       "type": "string",
       "title": "Gatekeeper cns",
-      "default": "",
       "examples": [
         "myhost.mydomain.com,*.myotherdomain.com,123.123.123.123"
       ]
@@ -443,7 +436,6 @@
       "$id": "#/properties/lightning_nodename",
       "type": "string",
       "title": "The lightning node name",
-      "default": "",
       "examples": [
         "🚀 Mighty Moose 🚀"
       ]
