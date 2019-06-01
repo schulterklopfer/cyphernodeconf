@@ -6,13 +6,15 @@
   "title": "Cyphernode config file structure v0.2.0",
   "additionalProperties": false,
   "required": [
-    "__version",
+    "schema_version",
+    "setup_version",
     "features",
     "net",
     "use_xpub",
     "installer_mode",
     "run_as_different_user",
     "docker_mode",
+    "docker_versions",
     "adminhash",
     "bitcoin_rpcuser",
     "bitcoin_rpcpassword",
@@ -88,7 +90,7 @@
     }
   ],
   "properties": {
-    "__version": {
+    "schema_version": {
       "type": "string",
       "enum": [
         "0.2.0"
@@ -97,6 +99,21 @@
       "examples": [
         "0.2.0"
       ]
+    },
+    "setup_version": {
+      "type": "string",
+      "examples": [
+        "v0.2.0"
+      ]
+    },
+    "docker_versions": {
+      "$id": "#/properties/dockerVersions",
+      "type": "object",
+      "title": "All versions of the docker containers",
+      "default": {},
+      "additionalProperties": {
+        "type": "string"
+      }
     },
     "features": {
       "$id": "#/properties/features",
