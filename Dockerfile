@@ -6,12 +6,11 @@ COPY . /app
 WORKDIR /app
 
 RUN mkdir /data && \
-  apk add --update su-exec p7zip openssl nano yarn apache2-utils && \
+  apk add --update su-exec p7zip openssl nano apache2-utils && \
   rm -rf /var/cache/apk/* && \
   npm ci --production
 
 WORKDIR /app
 
 ENTRYPOINT ["/sbin/su-exec"]
-#RUN find / -perm +6000 -type f -exec chmod a-s {} \; || true
 
