@@ -87,23 +87,6 @@ module.exports = {
       name: 'gatekeeper_cns',
       default: utils.getDefault( 'gatekeeper_cns' ),
       message: prefix()+'Gatekeeper cert CNS (ips, domains, wildcard domains seperated by comma)?'+utils.getHelp('gatekeeper_cns')
-    },
-    {
-      type: 'confirm',
-      name: 'gatekeeper_edit_apiproperties',
-      default: false,
-      message: prefix()+'Edit API properties?'+utils.getHelp('gatekeeper_edit_apiproperties')
-    },
-    {
-      when: function( props ) {
-        const r = props.gatekeeper_edit_apiproperties;
-        delete props.gatekeeper_edit_apiproperties;
-        return r;
-      },
-      type: 'editor',
-      name: 'gatekeeper_apiproperties',
-      message: utils.getHelp('gatekeeper_apiproperties')||' ',
-      default: utils.getDefault( 'gatekeeper_apiproperties' )
     }];
   },
   templates: function( props ) {
